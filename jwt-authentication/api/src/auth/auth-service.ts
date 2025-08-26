@@ -23,7 +23,7 @@ export class AuthService {
  
 
     async login(dto:AuthRequestDto): Promise<AuthResponseDto|null>{
-
+	//if(dto.groups.includes('admin'))
         const roles: Role[] = [Role.Admin,Role.NS,Role.Employee,Role.Support];//TODO: бшдюбюрэ пнкх он цпсооюл AD
 
         if(roles.length){
